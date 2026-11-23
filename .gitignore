@@ -1,0 +1,14 @@
+# 1. Ignore everything in this folder by default
+*
+
+# 2. Allow Git to look inside subfolders (required for folder exceptions)
+!*/
+
+# 3. Always track the .gitignore file itself
+!.gitignore
+
+# 4. Whitelist only the specific ICVV modified scripts and data from the original paper.
+!parallel_DockQ.py
+# !pydock_energies.ipynb
+# !scores-ICVV.ipynb
+# !superimposition-ICVV.ipynb
