@@ -9,6 +9,8 @@
 
 # 4. Whitelist only the specific ICVV modified scripts and data from the original paper.
 !parallel_DockQ.py
-# !pydock_energies.ipynb
-# !scores-ICVV.ipynb
-# !superimposition-ICVV.ipynb
+!pydock_energies.ipynb
+!scores-ICVV.ipynb
+!superimposition-ICVV.ipynb
+!AF3S_with_DockQ_z_scores.csv
+!README.md
