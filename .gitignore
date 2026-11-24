@@ -16,8 +16,15 @@
 !README.md
 
 # 5. Whitelist the following plots and figures
-!plots/AF3S_cluster_score_distributions_tm.png
 !plots/AF3S_cluster_score_distributions.png
+!plots/AF3S_cluster_score_distributions_2.png
+!plots/AF3S_cluster_score_distributions_tm.png
+!plots/AF3S_cluster_score_distributions_tm_2.png
+!plots/AF3_energies_per_cluster.png
+!plots/AF3_energies_per_cluster_2.png
+!plots/correlation_metrics.png
+!plots/rank_vs_rank*.png
+!plots/correlation_metrics_z_scores.png
 !plots/D200_to_K564_vs_P194_to_C198_Distances.png
 !plots/model_legend.png
 !plots/P223_to_Zn_vs_D200_to_K564_Distances.png
@@ -26,3 +33,4 @@
 !plots/Ligand_RMSD_(AF3_Models_and_Precat_vs_Recog)_-_Const.png
 !plots/Ligand_RMSD_(AF3_Models_and_Precat_vs_Recog)_-_Full.png
 !plots/LigandRMSD_vs_C434toC127_(Over_Recog)_-_Constant_Fab.png
+!plots/DockQ_distribution*.png

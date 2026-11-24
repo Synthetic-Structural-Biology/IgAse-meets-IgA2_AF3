@@ -6,7 +6,7 @@ Here, we extend the work by adding `pDockQ2`, `DockQ` and `pyDock total energy` 
 
 ## Software Requirements
 
-| Script | Software |
+| Script | Software requirements |
 | --- | --- |
 | [parallel_DockQ.py](./parallel_DockQ.py) | DockQ |
 | [pydock_energies.ipynb](./pydock_energies.ipynb) | NumPy, Matplotlib, gemmi, DockQ, pyDock3 |
