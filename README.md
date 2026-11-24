@@ -20,9 +20,9 @@ Here, we extend the work by adding `pDockQ2`, `DockQ` and `pyDock total energy` 
 ├── parallel_DockQ.py
 ├── scores-ICVV.ipynb
 ├── superimposition-ICVV.ipynb
-├── AF3S_with_DockQ_z_scores.csv
 ├── pydock_energies.ipynb
-├── plots/
+├── AF3S_with_DockQ_z_scores.csv
+└── plots/
 ```
 
 ## Reference
@@ -32,7 +32,9 @@ If you use any scripts from this repository in your research, or the original re
 ```bibtex
 @article{larrota2026pnas,
     title = {A “knob-in-hole” gate in the antibody CH1 domain underlies subclass-independent IgA hinge cleavage by the commensal metallopeptidase IgAse},
-    author = {Ramírez-Larrota, Juan Sebastián  and Arasa Estivill, Guillem and López-Martín, Mario and Effantin, Gregory and Gragera, Marcos and Sánchez Sorzano, Carlos Óscar and Marcos, Enrique and Eckhard, Ulrich and Gomis-Rüth, Francesc Xavier},
+    author = {Ramírez-Larrota, Juan Sebastián  and Arasa Estivill, Guillem and 
+    López-Martín, Mario and Effantin, Gregory and Gragera, Marcos and Sánchez Sorzano, Carlos Óscar and 
+    Marcos, Enrique and Eckhard, Ulrich and Gomis-Rüth, Francesc Xavier},
     journal = {Proceedings of the National Academy of Sciences},
     doi = {10.1073/pnas.2626241123},
     year = {2026}
@@ -43,4 +45,4 @@ Original scripts and data can be found in the [original Zenodo repository](https
 
 ## Acknowledgements
 
-This extended work was supported by a Conexión BCB grant during a short mobility program in collaboration with the Model3DBio group at ICVV-CSIC, led by Dr. Juan Fernández-Recio.
+This extended work was done by [Guillem Arasa](https://github.com/guillemares), supported by a Conexión BCB grant during a short mobility program in collaboration with the Model3DBio group at ICVV-CSIC, led by Dr. Juan Fernández-Recio.

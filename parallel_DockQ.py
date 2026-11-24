@@ -61,9 +61,7 @@ def run_DockQ(
 def parse_dockq_output(output):
 
     results = {}
-
     number = r"([-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?)"
-
     # Total DockQ
     total_match = re.search(
         rf"Total DockQ .*?:\s*{number}",
@@ -84,24 +82,17 @@ def parse_dockq_output(output):
     }
 
     for line in output.splitlines():
-
         if not re.match(r"\s*DockQ\s+", line):
             continue
-
         mapping_match = re.search(
             r"\bmapping\s+(\S+)",
             line
         )
-
         if not mapping_match:
             continue
-
         interface = mapping_match.group(1).split(":")[0]
-
         for metric, pattern in patterns.items():
-
             match = re.search(pattern, line)
-
             if match:
                 results[f"{metric}_{interface}"] = float(
                     match.group(1)
@@ -119,13 +110,11 @@ def calculate_pair(task):
     model, reference = task
 
     try:
-
         metrics = run_DockQ(
             model_pdb=model,
             reference_pdb=reference,
             dockq_model="short"
         )
-
         return {
             "model": os.path.basename(model),
             "reference": os.path.basename(reference),
@@ -134,7 +123,6 @@ def calculate_pair(task):
         }
 
     except Exception as e:
-
         return {
             "model": os.path.basename(model),
             "reference": os.path.basename(reference),
@@ -152,16 +140,12 @@ def generate_pairs(files, directed=True):
     n = len(files)
 
     for i in range(n):
-
         for j in range(n):
-
             if i == j:
                 continue
-
             # If directed=False, calculate only one direction
             if not directed and j <= i:
                 continue
-
             yield files[i], files[j]
 
 
@@ -186,34 +170,23 @@ def run_parallel_dockq(
     )
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-
         with open(output_file, "a", buffering=1) as json_file:
-
             with tqdm(total=total, desc="DockQ calculations") as pbar:
-
                 while True:
-
                     batch = list(islice(pairs, batch_size))
-
                     if not batch:
                         break
-
                     futures = [
                         executor.submit(calculate_pair, pair)
                         for pair in batch
                     ]
-
                     for future in as_completed(futures):
-
                         result = future.result()
-
                         # Only the main thread writes to the file
                         json_file.write(
                             json.dumps(result) + "\n"
                         )
-
                         pbar.update(1)
-
                     # Ensure completed results are flushed to disk
                     json_file.flush()
 
