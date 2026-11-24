@@ -4,6 +4,8 @@ This repository contains analysis scripts supporting the publication: _A “knob
 Initially, the metrics reported in the paper were: `pTM`, per chain and total `ipTM` and `ipSAE`, `TM score`, `Ligand RMSD` and `atom-atom distances`.
 Here, we extend the work by adding `pDockQ2`, `DockQ` and `pyDock total energy` and correlating a few of all metrics.
 
+![Header Image](./header.png)
+
 ## Software Requirements
 
 | Script | Software requirements |

@@ -34,3 +34,5 @@
 !plots/Ligand_RMSD_(AF3_Models_and_Precat_vs_Recog)_-_Full.png
 !plots/LigandRMSD_vs_C434toC127_(Over_Recog)_-_Constant_Fab.png
 !plots/DockQ_distribution*.png
+
+!header.png
